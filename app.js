@@ -15,7 +15,7 @@ server.headersTimeout = 120 * 1000;
 const html = `
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="/color-modes.js"></script>
+  <head><script type="text/javascript" src="/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -369,7 +369,7 @@ const html = `
     <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
   </div>
 </footer>
-<script src="/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>
