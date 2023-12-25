@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // added by us
-// app.use(express.static("main")); /* 'this shit doesnt work */
+app.use(express.static("main")); /* 'this shit doesnt work */
 // app.use("/", express.static(path.join(__dirname, "main")));
 
 app.get("/", (req, res) => res.type('html').send(html));
@@ -16,8 +16,7 @@ server.headersTimeout = 120 * 1000;
 const html = `
 <!doctype html>
 <html lang="en" class="h-100" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
-	  
+  <head> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -116,9 +115,8 @@ const html = `
       }
     </style>
 
-    
     <!-- Custom styles for this template -->
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link type="text/css" href="sticky-footer-navbar.css">
   </head>
   <body class="d-flex flex-column h-100">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
