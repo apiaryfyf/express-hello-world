@@ -116,7 +116,9 @@ const html = `
     </style>
 
     <!-- Custom styles for this template -->
-    <link type="text/css" href="sticky-footer-navbar.css">
+		<style>
+    	main > .container {padding: 60px 15px 0;}
+    </style>
   </head>
   <body class="d-flex flex-column h-100">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
