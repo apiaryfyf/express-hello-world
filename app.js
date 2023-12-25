@@ -2,11 +2,11 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.get("/", (req, res) => res.type('html').send(html));
-
 // added by us
 //app.use(express.static('public')); /* THIS SHIT DOESNT WORK */
 app.use(express.static(__dirname+ '/public'));
+
+app.get("/", (req, res) => res.type('html').send(html));
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
