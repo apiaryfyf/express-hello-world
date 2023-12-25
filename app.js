@@ -15,7 +15,7 @@ server.headersTimeout = 120 * 1000;
 const html = `
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="/assets/js/color-modes.js"></script>
+  <head><script src="color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +30,7 @@ const html = `
 
     <link type="text/css" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-<link type="text/css" href="/assets/dist/css/bootstrap.min.css">
+<link type="text/css" href="bootstrap.min.css">
 
     <style>
       .bd-placeholder-img {
@@ -369,7 +369,7 @@ const html = `
     <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
   </div>
 </footer>
-<script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
 
     </body>
 </html>
