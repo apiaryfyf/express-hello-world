@@ -3,8 +3,8 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // added by us
-app.use(express.static('main')); /* 'main' is github directory? */
-//app.use(express.static(__dirname+ '/public'));
+// app.use(express.static('main')); /* 'this shit doesnt work */
+app.use(express.static(__dirname+ '/main'));
 
 app.get("/", (req, res) => res.type('html').send(html));
 
