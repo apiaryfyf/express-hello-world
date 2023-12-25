@@ -27,7 +27,7 @@ const html = `
 
     <link type="text/css" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-<link type="text/css" href="../assets/dist/css/bootstrap.min.css">
+<link type="text/css" href="/assets/dist/css/bootstrap.min.css">
 
     <style>
       .bd-placeholder-img {
