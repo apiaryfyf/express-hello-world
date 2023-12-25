@@ -4,8 +4,8 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // added by us
-// app.use(express.static('main')); /* 'this shit doesnt work */
-app.use(express.static(path.join(__dirname, 'main')));
+app.use(express.static("main")); /* 'this shit doesnt work */
+//app.use("/", express.static(path.join(__dirname, "main")));
 
 app.get("/", (req, res) => res.type('html').send(html));
 
